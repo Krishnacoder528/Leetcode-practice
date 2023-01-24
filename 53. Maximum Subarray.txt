@@ -1,0 +1,24 @@
+class Solution {
+public:
+    
+   //Time limit exceeded solution
+    
+   /* int maxSubArray(vector<int>& nums) {
+        int n = nums.size(), ans = INT_MIN;
+        for(int i = 0; i < n; i++) {
+            for(int j = i, curSum = 0; j < n ; j++){ 
+                curSum += nums[j];
+                ans = max(ans, curSum);        
+            }
+        }
+        return ans;
+    } */
+    int maxSubArray(vector<int>& nums) {
+        int curMax = 0, maxTillNow = INT_MIN;
+        for(auto c : nums){
+            curMax = max(c, curMax + c);
+            maxTillNow = max(maxTillNow, curMax);
+        }
+        return maxTillNow;
+    } 
+};  sss
