@@ -1,3 +1,4 @@
+// smallest even multiple
 class Solution {
 public:
     int smallestEvenMultiple(int n) {
