@@ -21,7 +21,7 @@ public:
             }
             int size=res.size();
         
-        // pattern sizeum  result sizeum same illena false return panrom
+        // pattern sizeum  result sizeum same illena false return pannrom
         
             if(p!=size)
             return false;
