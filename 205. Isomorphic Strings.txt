@@ -20,6 +20,5 @@ public:
         mp1[t[i]]=s[i];
     }
         return 1;
-           
-    }
+  }
 };
